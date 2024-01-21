@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Recursive&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Recursive&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&family=Recursive&family=Roboto&display=swap');
 *{
   padding: 0;
@@ -10,27 +7,27 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #FFF8E1;
-  /* overflow: hidden; */
+  background-color: #FFF8E1; 
+
 }
-/* Landing page */
 main{
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
+/* Landing page */
 .logo img{
   width: 165px;
 }
 nav{
-  width: 100%;
-  display: flex;
+  max-width: 100%;
+  display:  flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Inter';
-  position: -webkit-sticky;
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  background-color: #FFF8E1;
+  top: 0; */
+ 
 }
 .menu-section ul{
   display: flex;
@@ -70,6 +67,9 @@ nav{
   width: 663px;
   height: 633px;
 }
+.title{
+  padding-right: 30px;
+}
 .title h2{
   font-family: 'Inika', serif;
   font-size: 59px;
@@ -80,7 +80,6 @@ nav{
   font-family: 'Inter';
   font-size: 18px;
   font-weight: 400;
-  padding-right: 150px;
   line-height: 28px;
 }
 .title a{
@@ -257,7 +256,7 @@ nav{
 .our-blogs{
   display: flex;
   align-items: center;
-
+  justify-content: center;
 }
 .profile{
   display: flex;
@@ -267,13 +266,14 @@ nav{
 .profile img{
   width: 280px;
   height: 280px;
+  object-fit:cover;
 }
 .cards{
   background-color: #FFFFFF;
-  margin-right: 80px;
-  margin-left: 40px;
+  margin-right: 50px;
+  margin-left: 70px;
   border-radius: 19px;
-  padding: 20px 30px;
+  padding: 20px 20px;
   box-shadow: -2px -9px 42px 0px #4D422C61;
 }
 .cards p{
@@ -281,12 +281,10 @@ nav{
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
-  /* padding: 10px 30px; */
-  padding-top: 20px;
+  padding: 10px 0 ;
 
 }
 .cards h3{
-  padding: 10px 0px;
   font-size: 22px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -299,9 +297,7 @@ nav{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 18px;
-  /* padding: 10px 30px; */
-  padding-top: 0;
-  padding-right: 20px;
+  padding: 10px 30px 0 0;
 }
 .cards a{
   text-decoration: none;
@@ -319,7 +315,7 @@ nav{
   margin-left: 40px;
 }
 .contact-us{
-  padding: 0 45px 0 0;
+  padding: 0 225px 0 0;
 }
 .contact-us img{
   width: 356px;
@@ -336,8 +332,7 @@ nav{
   line-height: 31px;
   font-family:'Roboto', sans-serif;
   font-weight: 400;
-  color: #734B33;
-  padding: 0 220px 0 0;
+  color: #734B33; 
 }
 form{
   display: grid;
@@ -353,7 +348,7 @@ input::placeholder{
   font-weight: 400;
 }
 form input{
-  width: 450px;
+  width: 100%;
   font-size: 20px;
   margin-bottom: 30px;
   outline: none;
@@ -416,9 +411,221 @@ button:hover{
   margin-bottom: 20px;
   margin-top: 20px;
 }
+.copy-right{
+  display: flex;
+  align-items: center;
+}
 .copy-right img{
   width: 15px;
+  height: 15px;
+  margin-left: 0;
 }
 
-
-
+@media  screen and (max-width: 1024px) {
+  
+  /* .title h2{
+    font-size: 39px;
+  } */
+  .hero{
+    margin-left: 100px;
+  }
+  .profile img{
+    width: 200px;
+    height: 200px;
+  }
+  .cards{
+    margin: 0 20px;
+    border-radius: 16px;
+    padding: 20px 20px;
+    box-shadow: -2px -7px 39px 0px #4D422C61;
+  }
+  .cards p{
+    color:#BB6939;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    /* padding: 10px 30px; */
+    padding-top: 10px;
+  }
+  .cards h3{
+    font-size: 20px;
+  }
+  
+}
+@media screen and (max-width: 768px){
+  
+}
+@media  screen and (max-width: 426px){
+  /* html{
+    width: 500px;
+  } */
+  nav{
+    max-width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+  }
+  .container3{
+    display: grid;
+  }
+  .hero{
+    display: grid;
+  }
+  .about-us{
+    display: grid;
+  }
+  .our-menu{
+    display: grid;
+    gap: 50px;
+    margin-left: 150px;
+  }
+  .our-blogs{
+    display: grid;
+    margin-left: 150px;
+    gap: 100px ;
+  }
+  .menu-section li{
+    margin:10px 10px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .logo img{
+    width: 100px;
+    margin-left: 40px;
+  }
+  .signup-link a {
+    border: 1px solid #523728;
+    padding: 10px 10px;
+    border-radius: 38px;
+    margin-left: 40px;
+    font-size: 13px;
+  }
+  .main-image img{
+    width: 400px;
+    height: 400px;
+  }
+  .title{
+    padding: 0;
+  }
+  .title h2{
+    font-size: 40px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+  }
+  .start-btn a{
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 400;
+  }
+  .watch-btn a{
+    padding: 10px 20px;
+    border-radius: 100px;
+  }
+  .about-image img{
+    width: 400px;
+    height: 400px;
+  }
+  .about-image{
+    margin-left: 100px;
+  }
+  .discription{
+    padding: 0;
+    margin-left: 90px;
+    line-height: 60px;
+  }
+  .discription h2{
+    font-size: 40px;
+  }
+  .discription p{
+    padding: 0;
+    margin: 10px 0;
+    line-height: 28px;
+    font-size: 18px;
+  }
+  .discription a{
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  .watch-btn img{
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+  }
+  .container h2{
+    font-size: 44px;
+    margin: 40px 0;
+    margin-left: 130px;
+  }
+  .container2 h2{
+    font-size: 44px;
+    margin: 40px 0 0 130px;
+  }
+  .posts {
+    font-size: 20px;
+    margin: 0 0 40px 130px;
+  }
+  .cards{
+    padding: 10px;
+    margin: 0;
+  }
+  .profile img{
+    width: 300px;
+    height: 300px;
+  }
+  .contact-us img {
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
+  }
+  .contact-us{
+    padding: 0 100px 0 0;
+    margin-left: 60px;
+  }
+  .social-icons img{
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+  }
+  .contact-form{
+    margin-top: 30px;
+  }
+  form input{
+    width: 400px;
+    font-size: 18px;
+    padding: 15px ;
+    border-radius: 40px; 
+  }
+  textarea{
+    width: 400px;
+    font-size: 18px;
+    padding: 15px ;
+    border-radius: 20px;
+  } 
+  input::placeholder{
+    font-size: 18px;
+  }
+  textarea::placeholder{
+    font-size: 18px;
+  }
+  button{
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 40px;
+  }
+  .copy-right img{
+    width: 15px;
+    height: 15px;
+    margin-left: 0;
+  }
+  .social-icons p{
+    font-size: 14px;
+  }
+  .social-icons{
+    margin-left: 120px;
+  }
+}  
