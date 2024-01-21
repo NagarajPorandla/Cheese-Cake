@@ -477,7 +477,7 @@ button:hover{
   }
   .our-menu{
     display: grid;
-    gap: 50px;
+    gap: 100px;
     margin-left: 150px;
   }
   .our-blogs{
@@ -503,14 +503,21 @@ button:hover{
     font-size: 13px;
   }
   .main-image img{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
+    position: relative;
+    right: 50px;
   }
   .title{
-    padding: 0;
+    padding: 20px 0;
+    margin-right:90px ;
   }
   .title h2{
     font-size: 40px;
+    text-align: center;
+  }
+  .title p{
+    text-align: center;
   }
   .buttons{
     display: flex;
@@ -535,6 +542,7 @@ button:hover{
   .discription{
     padding: 0;
     margin-left: 90px;
+    text-align: justify;
     line-height: 60px;
   }
   .discription h2{
@@ -557,8 +565,40 @@ button:hover{
   }
   .container h2{
     font-size: 44px;
-    margin: 40px 0;
-    margin-left: 130px;
+    margin-left: 100px;
+  }
+  .cake{
+    padding: 0px 20px;
+    border-radius: 10px;
+  }
+  .cake p{
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  .price p{
+    font-size: 25px;
+  }
+  .price span{
+    font-size: 20px;
+  }
+  .dish img{
+    width: 200px;
+    height: 200px;
+    margin: 40px 80px;
+  }
+  .cake h3{
+    padding: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .rating img{
+    width: 20px;
+  }
+  .details{
+    margin-bottom: 20px;
+    padding: 0 20px;
   }
   .container2 h2{
     font-size: 44px;
@@ -569,12 +609,33 @@ button:hover{
     margin: 0 0 40px 130px;
   }
   .cards{
-    padding: 10px;
-    margin: 0;
+    margin: 0 30px 0 0;
+  }
+  .cards p{
+    margin: 0 0 0 20px;
+  }
+  .cards h3{
+    margin: 0 20px;
+    font-size: 22px;
+  }
+  .cards a{
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .info p{
+    line-height: 22px;
+    font-size: 18px;
+    text-align:justify;
+    padding: 0 ;
+    margin-right: 20px;
+    color: #000000;
+  }
+  .profile{
+    margin: 10px;
   }
   .profile img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
   .contact-us img {
     width: 300px;
@@ -582,8 +643,9 @@ button:hover{
     margin-left: 30px;
   }
   .contact-us{
-    padding: 0 100px 0 0;
-    margin-left: 60px;
+    padding: 0 50px 0 0;
+    margin-left: 50px;
+    text-align: center;
   }
   .social-icons img{
     width: 20px;
@@ -628,4 +690,31 @@ button:hover{
   .social-icons{
     margin-left: 120px;
   }
-}  
+}
+@media  screen and (max-width: 376px){
+  .cake{
+    margin-left: 50px;
+  }
+  .cards{
+    margin-left: 100px;
+  }
+  .container2 h2{
+    margin-left: 190px;
+  }
+  .posts{
+    margin-left: 190px;
+  }
+  .social-icons{
+    margin: 40px 0 0 80px;
+  }
+  .social-icons img{
+    margin-left: 30px;
+  }
+  .copy-right img{
+    margin-left: 0;
+  }
+  .copy-right{
+    display: flex;
+    align-items:flex-start;
+  }
+}
