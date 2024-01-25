@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&family=Recursive&family=Roboto&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  background-color: #FFF8E1; 
-
+  background-color: #FFF8E1;
 }
 main{
   max-width: 1300px;
@@ -187,11 +187,11 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 .dish img{
   width: 163px;
   height: 133px;
+  object-fit:cover;
 }
 .cake{
   background-color: #FFFFFF;
@@ -209,7 +209,7 @@ nav{
   font-size: 13px;
   font-weight: 400;
   font-family: 'Recursive', sans-serif;
-  padding:0px 50px 10px 10px;
+  padding:0px 10px 10px;
 }
 .details{
   display: flex;
@@ -240,6 +240,7 @@ nav{
   font-family: 'Inika', serif;
   font-size: 54px;
   font-weight: 400;
+  margin-bottom: 0;
   margin-top: 80px;
   color: #734B33;
 }
@@ -251,7 +252,7 @@ nav{
   color: #734B33;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin: 0 0 40px 0;
 }
 .our-blogs{
   display: flex;
@@ -266,7 +267,6 @@ nav{
 .profile img{
   width: 280px;
   height: 280px;
-  object-fit:cover;
 }
 .cards{
   background-color: #FFFFFF;
@@ -282,7 +282,7 @@ nav{
   font-family: 'Outfit', sans-serif;
   font-weight: 500;
   padding: 10px 0 ;
-
+  margin: 0;
 }
 .cards h3{
   font-size: 22px;
@@ -423,32 +423,66 @@ button:hover{
 
 @media  screen and (max-width: 1024px) {
   
-  /* .title h2{
+  .signup-link{
+    margin-right: 50px;
+  }
+  .title h2{
     font-size: 39px;
-  } */
+  } 
   .hero{
-    margin-left: 100px;
+    margin-left: 50px;
+  }
+  .main-image img{
+    width: 463px;
+    height: 433px;
+  }
+  .about-us{
+    margin-left: 50px;
+  }
+  .about-image img{
+    width: 358px;
+  }
+  .discription{
+    padding: 0;
+  }
+  .discription h2{
+    font-size: 39px;
+  }
+  .discription p{
+    font-size: 18px;
+  }
+  .container h2{
+    font-size: 39px;
+  }
+  .cake{
+    margin: 0 20px;
+  }
+  .cake h3{
+    padding: 0;
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 20px;
   }
   .profile img{
     width: 200px;
     height: 200px;
   }
   .cards{
-    margin: 0 20px;
+    margin: 0 30px;
     border-radius: 16px;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     box-shadow: -2px -7px 39px 0px #4D422C61;
   }
   .cards p{
-    color:#BB6939;
     font-size: 16px;
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
-    /* padding: 10px 30px; */
-    padding-top: 10px;
   }
   .cards h3{
     font-size: 20px;
+  }
+  .contact-us{
+    padding: 0;
   }
   
 }
@@ -467,22 +501,23 @@ button:hover{
     font-family: 'Inter';
   }
   .container3{
-    display: grid;
+    flex-direction: column;
   }
   .hero{
-    display: grid;
+    flex-direction: column-reverse;
   }
   .about-us{
-    display: grid;
+    flex-direction: column;
   }
   .our-menu{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 100px;
-    margin-left: 150px;
+    margin-left: 80px; 
   }
   .our-blogs{
-    display: grid;
-    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
     gap: 100px ;
   }
   .menu-section li{
@@ -492,8 +527,7 @@ button:hover{
     font-weight: 500;
   }
   .logo img{
-    width: 100px;
-    margin-left: 40px;
+    width: 80px;
   }
   .signup-link a {
     border: 1px solid #523728;
@@ -503,18 +537,15 @@ button:hover{
     font-size: 13px;
   }
   .main-image img{
-    width: 450px;
-    height: 450px;
-    position: relative;
-    right: 50px;
-  }
-  .title{
-    padding: 20px 0;
-    margin-right:90px ;
+    width: 400px;
+    height: 400px;
   }
   .title h2{
     font-size: 40px;
-    text-align: center;
+    text-align:center;
+  }
+  .title{
+    padding: 0 ;
   }
   .title p{
     text-align: center;
@@ -522,41 +553,37 @@ button:hover{
   .buttons{
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .start-btn a{
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 100px;
     font-weight: 400;
   }
   .watch-btn a{
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 100px;
   }
   .about-image img{
-    width: 400px;
-    height: 400px;
-  }
-  .about-image{
-    margin-left: 100px;
+    width: 300px;
+    height: 300px;
   }
   .discription{
     padding: 0;
-    margin-left: 90px;
-    text-align: justify;
-    line-height: 60px;
   }
   .discription h2{
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
   }
   .discription p{
     padding: 0;
     margin: 10px 0;
-    line-height: 28px;
-    font-size: 18px;
+    line-height: 24px;
+    font-size: 16px;
   }
   .discription a{
     margin-top: 10px;
-    margin-left: 120px;
+    margin-left: 100px;
   }
   .watch-btn img{
     width: 10px;
@@ -564,17 +591,18 @@ button:hover{
     margin-right: 2px;
   }
   .container h2{
-    font-size: 44px;
-    margin-left: 100px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 70px;
   }
   .cake{
     padding: 0px 20px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   .cake p{
     padding: 0;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px 0;
   }
   .price p{
@@ -586,65 +614,61 @@ button:hover{
   .dish img{
     width: 200px;
     height: 200px;
-    margin: 40px 80px;
+    margin: 20px 30px;
   }
   .cake h3{
     padding: 0;
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
   }
   .rating img{
-    width: 20px;
+    width: 15px;
   }
   .details{
     margin-bottom: 20px;
     padding: 0 20px;
   }
   .container2 h2{
-    font-size: 44px;
-    margin: 40px 0 0 130px;
+    font-size: 40px;
   }
   .posts {
     font-size: 20px;
-    margin: 0 0 40px 130px;
   }
-  .cards{
-    margin: 0 30px 0 0;
+  .profile img{
+    width: 300px;
+    height: 300px;
   }
-  .cards p{
-    margin: 0 0 0 20px;
+  .container2{
+    margin-left: 100px;
   }
   .cards h3{
-    margin: 0 20px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .cards a{
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .info p{
     line-height: 22px;
-    font-size: 18px;
+    font-size: 16px;
     text-align:justify;
     padding: 0 ;
     margin-right: 20px;
     color: #000000;
   }
-  .profile{
-    margin: 10px;
+  .container3{
+    margin-left: 70px
   }
-  .profile img{
-    width: 350px;
-    height: 350px;
+  .contact-us h1{
+    font-size: 40px;
   }
   .contact-us img {
     width: 300px;
     height: 300px;
-    margin-left: 30px;
   }
   .contact-us{
-    padding: 0 50px 0 0;
-    margin-left: 50px;
+    padding: 0;
+    margin-left: 0px;
     text-align: center;
   }
   .social-icons img{
@@ -688,24 +712,62 @@ button:hover{
     font-size: 14px;
   }
   .social-icons{
-    margin-left: 120px;
+    margin-left: 60px;
   }
 }
 @media  screen and (max-width: 376px){
+  .hero{
+    width: 500px;
+  }
+  .buttons{
+    display: flex;
+    justify-content: end;
+    width: 400px;
+  }
+  .main-image img{
+    margin: 0;
+  }
+  .about-us{
+    width: 500px;
+  }
+  .container h2{
+    width: 500px;
+    margin: 30px 0;
+  }
+  .about-image img{
+    width: 400px;
+    height: 400px;
+  }
+  .discription h2{
+    font-size: 40px;
+    /* margin: 0; */
+  }
+  .our-menu{
+    margin-left: 200px;
+  }
   .cake{
     margin-left: 50px;
+    width: 400px;
   }
   .cards{
-    margin-left: 100px;
+    width:350px;
+    margin-left: 150px;
   }
   .container2 h2{
-    margin-left: 190px;
+    width: 400px;
   }
   .posts{
-    margin-left: 190px;
+    width: 400px;
+  }
+  .container3{
+    width: 400px;
+  }
+  button{
+    width: 100%;
   }
   .social-icons{
-    margin: 40px 0 0 80px;
+    width: 400px;
+    margin: 40px 0 0 60px;
   }
   .social-icons img{
     margin-left: 30px;
