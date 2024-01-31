@@ -9,10 +9,10 @@
 }
 body{
   background-color: #FFF8E1;
-}[p]
+}
 main{
   max-width: 1300px;
-  margin: 0px auto;  
+  margin: 40px auto;  
   /* background-color: lightcoral; */
 }
 /* Landing page */
@@ -95,11 +95,11 @@ nav{
   align-items: center;
 }
 .start-btn a{
-  display: block;
+  /* display: block; */
   color: #FFFFFF;
   background-color: #523728;
-  /* padding: 20px 40px; */
-  /* border-radius: 100px; */
+  padding: 20px 30px;
+  border-radius: 100px;
 }
 .start-btn a:hover{
   color: rgb(250, 217, 154);
