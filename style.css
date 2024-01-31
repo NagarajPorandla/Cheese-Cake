@@ -567,13 +567,11 @@ button:hover{
     flex-direction: column;
   }
   .our-menu{
-    display: flex;
     flex-direction: column;
     gap: 100px;
     /* margin-left: 80px;  */
   }
   .our-blogs{
-    display: flex;
     flex-direction: column;
     gap: 100px ;
   }
